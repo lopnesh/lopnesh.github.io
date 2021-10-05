@@ -1,4 +1,4 @@
-FROM node:latest as base
+FROM node:lts-alpine3.14 as base
 WORKDIR /usr/src/app
 COPY package.json ./
 ENV HOST 0.0.0.0
