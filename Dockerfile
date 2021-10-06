@@ -8,4 +8,8 @@ FROM node:12-alpine
 WORKDIR /home/docker/app
 COPY --from=builder /home/docker/app .
 ENV HOST 0.0.0.0
+<<<<<<< HEAD
 CMD yarn run dev
+=======
+CMD yarn run dev
+>>>>>>> 5a3a62aeac76f87576cefe485cd172c65548998e
