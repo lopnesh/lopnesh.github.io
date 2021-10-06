@@ -1,0 +1,15 @@
+- name: quicktok
+  gather_facts: false
+  hosts: [all]
+  become: yes
+
+  tasks:
+
+    - name: Create quicktok
+      docker_container:
+        name: quicktok
+        image: lopnesh/quicktok
+        pull: true
+        state: started
+        ports:
+          - "3000:3000"

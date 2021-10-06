@@ -1,11 +1,11 @@
-FROM node:lts-alpine3.14 as base
-WORKDIR /usr/src/app
-COPY package.json ./
-ENV HOST 0.0.0.0
-
-FROM base as development
-RUN npm install
+FROM node:12-alpine AS builder
+WORKDIR /home/docker/app
+COPY ./package.json /home/docker/app
+RUN yarn install
 COPY . .
-ENV NODE_ENV development
-EXPOSE 3000
-CMD [ "npm", "run", "dev" ]
+
+FROM node:12-alpine
+WORKDIR /home/docker/app
+COPY --from=builder /home/docker/app .
+ENV HOST 0.0.0.0
+CMD yarn run dev
