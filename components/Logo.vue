@@ -22,11 +22,10 @@
       <svg class="svg-tiktok">
         <use xlink:href="#icon-tiktok"></use>
       </svg>
-      <figcaption>quicktok</figcaption>
+      <figcaption>ЖОРЫН ТИКТОК</figcaption>
     </figure>
     <p class="sub">
-      Tik Tok popular trends by
-      <a target="_blank" href="https://github.com/statickidz">statickidz</a>
+      Артур сын собаки
     </p>
   </div>
 </template>
