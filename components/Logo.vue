@@ -22,10 +22,10 @@
       <svg class="svg-tiktok">
         <use xlink:href="#icon-tiktok"></use>
       </svg>
-      <figcaption>ЖОРЫН ТИКТОК</figcaption>
+      <figcaption>Project ticktak</figcaption>
     </figure>
     <p class="sub">
-      Артур сын собаки
+      THIS IS WEDNESDEY MY DUDES
     </p>
   </div>
 </template>
